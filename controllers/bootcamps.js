@@ -1,4 +1,4 @@
-const ErrorResponse = require('../Utils/errorResponse')
+const ErrorResponse = require('../utils/errorResponse')
 const asyncHandler = require('../middleware/async')
 const Bootcamp = require("../models/Bootcamp")
 const path = require('path');
@@ -7,8 +7,7 @@ const path = require('path');
 // @route GET /api/v1/bootcamps
 //@access  Public
 exports.getBootcamps = asyncHandler(async (req, res, next) => {
-   res.status(200).json(res.advancedResults);
-
+    res.status(200).json(res.advancedResults);
 })
 
 //@desc  Get single bootcamps
